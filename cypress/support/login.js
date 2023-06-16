@@ -10,4 +10,4 @@ Cypress.Commands.add('wrongLogin',(wrongUser,wrongPass) => {
     cy.get('input[name="password"]').clear().type(wrongPass);
     cy.get('.oxd-button').click()
     cy.get('p').contains('Invalid credentials')
-})
+}) 
